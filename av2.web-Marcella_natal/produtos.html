@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Natal - Loja de Doces Natalinos</title>
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png" >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+
+    <header>
+        <img rel="icon" src="img/favicon.png" alt="logo pagina">
+        <h1>Doce Natal</h1>
+        <p>Doces artesanais para celebrar a magia do Natal!</p>
+    <nav class="navegacao">
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contato.html">Contato.</a>
+        <a href="sobre.html">Sobre Nós</a>
+
+     
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bem-vindo à Doce Natal!</h2>
+    <p>Descubra nossa seleção de doces artesanais preparados especialmente para deixar seu Natal mais doce e especial.</p>
+    <p>Temos panetones, biscoitos, bolos, sobremesas e presentes para toda a família!</p>
+  </section>
+
+  <!-- PAINEL DE FILTROS E BUSCA -->
+  <div class="filtros-container">
+    <input type="text" id="campo-busca" placeholder="Buscar produto por nome...">
+    
+    <select id="filtro-categoria">
+      <option value="todos">Todas as Categorias</option>
+      <option value="Panetones">Panetones</option>
+      <option value="Biscoitos Festivos">Biscoitos Festivos</option>
+      <option value="Bolos de Natal">Bolos de Natal</option>
+      <option value="Sobremesas de Travessa">Sobremesas de Travessa</option>
+      <option value="Doces de Natal">Doces de Natal</option>
+      <option value="Kits e Presentes">Kits e Presentes</option>
+    </select>
+  </div>
+
+  <!-- CONTADOR -->
+  <p id="contador-produtos" class="contador"></p>
+
+  <!-- CONTAINER ÚNICO PARA OS CARDS -->
+  <main id="container-produtos" class="grid-produtos"></main>
+
+  <!-- MENSAGEM QUANDO NÃO HOUVER RESULTADOS -->
+  <div id="mensagem-vazia" class="mensagem-vazia" style="display: none;">
+    Nenhum produto encontrado com os filtros selecionados.
+  </div>
+
+  <!-- ESTRUTURA DO MODAL DE DETALHES -->
+  <div id="modal-detalhes" class="modal" style="display: none;">
+    <div class="modal-conteudo">
+      <span id="fechar-modal" class="fechar">&times;</span>
+      <div class="modal-body">
+        <img id="modal-imagem" src="" alt="">
+        <div class="modal-info">
+          <span id="modal-categoria" class="categoria-tag"></span>
+          <h2 id="modal-titulo"></h2>
+          <p id="modal-quantidade" class="quantidade-texto"></p>
+          <p id="modal-descricao" class="descricao-texto"></p>
+          <p id="modal-preco" class="preco"></p>
+          <button id="modal-btn-comprar">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTAINER PARA A MENSAGEM TOAST (CARRINHO) -->
+  <div id="toast-container"></div>
+
+
+
+  <footer>
+<p>&copy; 2026 Loja Natalina. 
+    Um Natal mais doce e inesquecível para você e sua família.
+</p>
+</footer>
+
+    <script src="js/produtos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

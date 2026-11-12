@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Natal</title>
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png" >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+    <header>
+    <nav  class="navegacao">
+        <img rel="icon" src="img/favicon.png" alt="logo pagina">
+        <h1><center>Doces Natalinos</center></h1>
+    <h2>Seja muito bem vindo ao nosso site de guloseimas natalinas.</h2>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contato.html">Contato.</a>
+        <a href="sobre.html">Sobre Nós</a>
+
+    </nav>
+
+    <div class="controle-musica">
+
+    <button id="botaoMusica" type="button">
+        <span id="iconeSino">🔔</span>
+        <span id="textoMusica">Tocar música</span>
+    </button>
+
+    <audio id="musicaFundo" loop>
+        <source src="audio/musica-natal.mp3" type="audio/mpeg">
+    </audio>
+
+   </div>
+</header>
+
+
+     <section class="parallax">
+        <div class="cena">
+        <img src="img/ceu-paralax.png " id="ceu" alt="Céu noturno">
+        <img src="img/floresta-paralax.png " id="floresta" alt="Floresta nevada">
+        <img src="img/vila-paralax.png " id="vila" alt="Vila de Natal">
+        <img src="img/noel-paralax.png " id="noel" alt="Papai Noel voando">
+        </div>
+    </section>
+
+    <h2>Descubra Nossas novidades da loja Doce Natal</h2>
+    <!-- Slideshow -->
+  <section class="slideshow">
+
+    <div class="slides">
+
+        <!-- Produto 1 -->
+        <article class="slide ativo">
+
+            <div class="slide-imagem">
+                <img src="img/banofe.jpg" alt="Banoffee">
+            </div>
+
+            <div class="slide-texto">
+                <span class="categoria">Aumento de vendas</span>
+
+                <h2>Banoffee</h2>
+
+                <p>
+                    Uma deliciosa torta, com massa crocante, recheio de doce de leite, banana, praliné de nozes pecan e chantilly.
+                     Uma sobremesa irresistível para os amantes de doces!
+                </p>
+
+                <span class="preco">R$ 99,90</span>
+            </div>
+        </article>
+
+        <!-- Produto 2 -->
+        <article class="slide">
+            <div class="slide-imagem">
+                <img src="img/torta-caqui.jpg" alt="Tartelete de Caqui">
+            </div>
+            <div class="slide-texto">
+                <span class="categoria">Feito artesanalmente</span>
+
+                <h2>Tartelete de Caqui</h2>
+
+                <p>
+                    Tartelete em tamanho indiviual, com massa crocante e recheio de caqui, uma fruta típica do outono.
+                    Aconchegante e que atende a todos os paladares, perfeita para o Natal.
+                </p>
+
+                <span class="preco">R$ 17,90</span>
+            </div>
+        </article>
+    
+
+     <!-- Produto 3 -->
+        <article class="slide">
+            <div class="slide-imagem">
+                <img src="img/mil-folhas.jpg" alt="Mil Folhas">
+            </div>
+            <div class="slide-texto">
+                <span class="categoria">Classico Atemporal</span>
+
+                <h2>Mil Folhas</h2>
+
+                <p>
+                    Camadas de massa folhada intercaladas com creme de confeiteiro,e morangos frescos entre as camadas para adicionar frescor 
+                    e finalizado com açúcar de confeiteiro polvilhado por cima.
+                </p>
+
+                <span class="preco">R$ 22,90</span>
+            </div>
+        </article>
+    
+
+     <!-- Produto 4 -->
+        <article class="slide">
+            <div class="slide-imagem">
+                <img src="img/guirlanda-nozes.webp" alt="guirlanda de nozes">
+            </div>
+            <div class="slide-texto">
+                <span class="categoria">Sobremesa inédita</span>
+
+                <h2>Guirlanda de Bolo de Nozes</h2>
+
+                <p>
+                    Massa leve e fina de pão de ló com recheio de creme de nozes, decorado com nozes caramelizadas e
+                    finalizado com tâmaras frescas e alecrim tostado. Uma sobremesa diferente do comum e sofisticada, perfeita para a ceia de Natal.
+                </p>
+
+                <span class="preco">R$ 149,90</span>
+            </div>
+        </article>
+    </div>
+
+    <!-- Controles -->
+    <div class="controles">
+
+        <button id="anterior">❮</button>
+
+        <span id="indicador">01 / 01</span>
+
+        <button id="proximo">❯</button>
+
+    </div>
+</section>
+
+<section class="destaques" id="produtos">
+    <div class="titulo-destaques">
+        <span>Nossos favoritos</span>
+        <h2>Destaques da loja</h2>
+        <p>Conheça algumas das nossas delícias especiais.</p>
+    </div>
+
+    <div class="grade-destaques" id="grade-destaques">
+
+        <!-- Os cards serão inseridos pelo JavaScript -->
+    </div>
+</section>
+
+<!-- CHAMADA FINAL -->
+
+<section class="chamada-final">
+    <div class="chamada-conteudo">
+        <div class="chamada-imagem">
+            <img src="img/noel-chamada.png"
+                 alt="Papai Noel convidando para conhecer os produtos">
+        </div>
+
+        <div class="chamada-texto">
+
+            <span>Um Natal ainda mais especial</span>
+
+            <h2>O Natal está mais doce por aqui!</h2>
+            <p>
+                Descubra nossas delícias artesanais e torne
+                seus momentos de Natal ainda mais especiais.
+                Temos algo delicioso esperando por você!
+            </p>
+            <a href="produtos.html#produtos" class="chamada-botao">
+                Conheça nossos produtos
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+<p>&copy; 2026 Loja Natalina. 
+    Um Natal mais doce e inesquecível para você e sua família.
+</p>
+</footer>
+
+    <script src="js/produtos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
